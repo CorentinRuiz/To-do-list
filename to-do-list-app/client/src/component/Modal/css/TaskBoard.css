@@ -1,0 +1,97 @@
+#btnTaskBoard.btn.btn.btn-primaryInformation{
+    background-color: none;
+}
+#btnTaskBoard.btn.btn.btn-primaryInformation:hover{
+    background-color: #11428b;
+    border-radius: 20%;
+}
+.TaskBoardIcon{
+    color: white;
+    margin:0; 
+}
+#orangeAlert {
+    grid-area: title;
+    border-radius: 50%;
+    width:17px; 
+    height:17px;
+    margin-left: 255px;
+    margin-top: 5px;
+    background-color: orange;
+}
+#greenAlert {
+    grid-area: title;
+    border-radius: 50%;
+    width:17px; 
+    height:17px;
+    margin-top: 5px;
+    margin-left: 260px;    
+    background-color: green;
+}
+#redAlert {
+    grid-area: title;
+    border-radius: 50%;
+    width:17px; 
+    height:17px;
+    margin-left: 175px;
+    margin-top: 5px;
+    background-color: red;
+}
+#warningAlert{
+    grid-area: title;
+    border-radius: 50%;
+    width:17px; 
+    height:17px;
+    margin-top: 5px;
+    margin-left: 150px;
+    background:url("./warning.png") no-repeat;
+}
+.titleTask{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "title";
+    width:100%;
+}
+h5{
+    grid-area: title;
+}
+
+#ModalTitleTaskBoard{
+    margin-left: 35%;
+}
+
+@media screen and (max-width:350px){
+    #redAlert{
+        grid-row:1;
+        grid-column:2;
+        margin-left: 0px;
+        float: right;
+    }
+    #redAlert > ul{
+        grid-row: 2;
+    }
+    #greenAlert{
+        grid-row:1;
+        grid-column:2;
+        margin-left: 0px; 
+    }
+    #greenAlert ul{
+        grid-row: 2;
+    }
+    #orangeAlert{
+        grid-row:1;
+        grid-column:2;
+        margin-left: 0px;
+    }
+    #orangeAlert ul{
+        grid-row: 2;
+    }
+    #ModalTitleTaskBoard{
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width:315px){
+    #ModalTitleTaskBoard{
+        margin-left: 0px;
+    }
+}

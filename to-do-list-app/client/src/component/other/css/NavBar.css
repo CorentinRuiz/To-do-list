@@ -1,0 +1,240 @@
+.navigation {
+    background-color: #02347f;
+    grid-template-columns: 25% 50% 25%;
+    display: grid;
+    height:75px;
+}
+
+#btnSettings.btn.btn-dropSettings{
+    background-color: none;
+}
+
+#btnSettings.btn.btn-dropSettings:hover{
+    background-color: #11428b;
+    border-radius: 20%;
+}
+
+#notify.btn.btn-dropNotify:hover{
+    background-color: #11428b;
+    border-radius: 20%;
+}
+
+
+.title{
+    grid-column: 2/3 ;
+    text-align: center;
+}
+.logos{
+    grid-column: 3/4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+svg{
+    margin-right: 15px;
+}
+
+.logoCHECKIT{
+    height: 62px;
+    width: 192px;
+}
+.button{
+    pointer-events: none; 
+}
+svg:hover, svg:focus{
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.cog{
+    color: white;
+    margin:0; 
+}
+#svgSettings {
+    width: 19px;
+    height: 19px;
+    margin-right: 0.7em;
+}
+.bell{
+    color: white;
+    margin:0; 
+}
+#notify.btn.btn.btn.btn-dropNotify .numberNotification
+{
+    position: absolute;
+    top: -3px;
+    right: 7px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ff2c74;
+    color: #fff;
+    line-height: 15px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 14px;
+}
+
+#idDisplayNotify.dropdown-menu.dropdown-menu-right.show{
+    background: rgb(248, 248, 248);
+    box-shadow: 1px 1px 1px rgb(187, 187, 187);
+    box-sizing: border-box;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 350px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    border: 1px thin rgb(187, 187, 187);
+    
+   
+}   
+
+
+ul{
+    padding: 0px;
+}
+
+ul li {
+    top: 100px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding: 8px 0;
+    display: flex;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+ul li:last-child
+{
+    border-bottom: none;
+}
+
+
+ul li .redWarning
+{
+    color: red;
+    font-size: 16 px;
+    line-height: 24px;
+    text-align: center;
+
+}
+
+ul li .orangeWarning
+{
+    color: orange;
+    font-size: 16 px;
+    line-height: 24px;
+    text-align: center;
+
+}
+
+ul li .greenWarning
+{
+    color: greenyellow;
+    font-size: 16 px;
+    line-height: 24px;
+    text-align: center;
+
+}
+
+ul li .bell{
+    color: black;
+    text-align: left;
+    
+}
+
+
+.menuNotify{
+    text-align: center;
+    padding: 5px;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+
+
+@media screen and (max-width: 664px){ /*ces regles sont valables en dessous d'une largueur de 664px*/
+
+    h1{
+        font-size: 30px;
+        float: left;
+    }
+
+    .navigation{
+        display: grid;
+        grid-template-columns: auto auto;
+        
+    }
+    .title{
+        grid-column: 1/3;
+        text-align: left;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .navigation{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+        height: 25%;
+
+    }
+    .title{
+        grid-column:1/4;
+        grid-row:1 ;
+        text-align: center;
+        
+    }
+    .logos{
+        grid-column: 1 /4 ;
+        grid-row: 2;
+        justify-content: space-evenly;
+        margin-bottom: 2%;
+    }
+    #idDisplayNotify.dropdown-menu.dropdown-menu-right.show{
+        background: rgb(248, 248, 248);
+        box-shadow: 1px 1px 1px rgb(187, 187, 187);
+        box-sizing: border-box;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 200px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 1rem;
+        text-align: center;
+        color: black;
+        font-family: "Poppins", sans-serif;
+        border: 1px thin rgb(187, 187, 187);
+        
+       
+    }   
+
+}
+
+
+
+.oudated{
+    color : red;
+}
+
+
+

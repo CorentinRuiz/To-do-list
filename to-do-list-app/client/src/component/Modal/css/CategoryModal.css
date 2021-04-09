@@ -1,0 +1,179 @@
+.Modal{
+    background-color: rgb(187, 187, 187);
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 1px 1px 1px black;
+    padding: 16px;
+    width: 600px;
+    height: 200px;
+    box-sizing: border-box;
+    transition: all 0.5s ease-out;
+    margin: auto;
+    margin-top: 100px;
+}
+.NameInput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.validate{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.colorInput{
+    display: flex;
+    padding : 18px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+#btnCreateCat.btn.btn-primaryCat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42.3px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 200px;
+    height: 50px;
+    background-color: #02347f;
+    color:white;
+    font-family: "Poppins", sans-serif;
+    font-weight:500;
+    border: solid;
+    border-width:thin;
+    border-color: rgb(0, 0, 0);
+    will-change: transform;
+    transition: transform 450ms;
+}
+
+#btnCreateCat.btn.btn-primaryCat:hover{
+    background-color: #174b9b;
+    transition: transform 125ms;
+    transform: translateY(-10px);
+}
+
+.contentButCat{
+    color:white;
+}
+
+
+#globalDivForCategoryModal {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+#labelNameCat {
+    grid-column: 1;
+    grid-row: 1;
+}
+#nameCat {
+    grid-column: 2;
+    grid-row: 1;
+}
+#labelChooseColor {
+    grid-column: 1;
+    grid-row: 2;
+}
+#categoryModalTitle{
+    width: 100%;
+    text-align: center;
+}
+#createButton {
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(243, 243, 243);
+    font-weight: 500;
+    color: black;
+    border: solid;
+    border-width:thin;
+    border-color: rgb(221, 221, 221);
+    font-family: "Poppins", sans-serif;
+}
+
+#createButton:hover{
+    background-color:rgb(249, 249, 249);
+}
+#redCircle {
+    background-color:red;
+    border: none;
+    border-radius:50px;
+    text-decoration : none;
+    width:40px;
+    height:40px;
+    outline: 0;
+}
+#orangeCircle {
+    border: none;
+    border-radius:50px;
+    text-decoration : none;
+    width:40px;
+    height:40px;
+    outline: 0;
+    background: orange;
+}
+#yellowCircle {
+    border: none;
+    border-radius:50px;
+    text-decoration : none;
+    width:40px;
+    height:40px;
+    outline: 0;
+    background: yellow;
+}
+#greenCircle {
+    border: none;
+    border-radius:50px;
+    text-decoration : none;
+    width:40px;
+    height:40px;
+    outline: 0;
+    background: green;
+}
+#blueCircle {
+    border: none;
+    border-radius:50px;
+    text-decoration : none;
+    width:40px;
+    height:40px;
+    outline: 0;
+    background: blue;
+}
+#purpleCircle {
+    border: none;
+    border-radius:50px;
+    text-decoration : none;
+    width:40px;
+    height:40px;
+    outline: 0;
+    background: purple;
+}
+#circleColorContainer {
+    display: flex;
+}
+#circleColorContainer > * {
+     margin: 0 0 0 10px; 
+}
+#chooseColor {
+    margin-top: 8px;
+}
+
+
+@media screen and (max-width: 500px ){
+    #globalDivForCategoryModal{
+
+        display: flex;
+        flex-direction: column;
+
+    } 
+    #circleColorContainer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #nameCat{
+        width: 80%;
+    }
+}

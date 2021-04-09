@@ -1,0 +1,240 @@
+#settingsTabs {
+    display: grid;
+    grid-gap: 30px;
+}
+#settingUsernameLabel
+{
+    margin-top: 20px;
+    grid-row: 1;
+    grid-column: 1;
+}
+#settingUsernameInput
+{
+    margin-top: 20px;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+
+
+#changeButton
+{
+    margin-top: 25px;
+    grid-row: 1;
+    grid-column: 3;
+    font-size: 90%;
+    text-decoration: underline;
+}
+#changeButton:hover
+{
+  cursor: pointer ;
+  color:rgb(124, 121, 121);
+}
+#settingEmailLabel
+{
+    grid-row: 2;
+    grid-column: 1;
+}
+#settingEmailInput
+{
+    grid-row: 2;
+    grid-column: 2;
+}
+#changeEmail
+{
+    grid-row: 2;
+    grid-column: 3;
+    font-size: 100%;
+    text-decoration: underline;
+    margin-right: 30px;
+}
+#changeEmail:hover
+{
+  cursor: pointer ;
+  color:rgb(124, 121, 121);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+#notifDiv{
+     margin-top: 20px; 
+}
+
+#pushNotif{
+  margin-bottom: 10px;
+  display: grid;
+  width: fit-content;
+}
+#pushNotifButton{
+  grid-row: 1;
+  grid-column: 1;
+}
+
+#emailNotif{
+  margin-bottom: 10px;
+  display: grid;
+  width: fit-content;
+
+}
+#emailNotifButton{
+  grid-row: 1;
+  grid-column: 1; 
+}
+
+#emailNotifLabel{
+  grid-row: 1;
+  grid-column: 2;
+  margin-left: 30px;
+}
+
+#pushFilterLabel{
+  margin-left: 30px;
+  grid-row: 1;
+  grid-column: 2;
+
+}
+
+#pushNotifLabel{
+  margin-left: 30px;
+  grid-row: 1;
+  grid-column: 2;
+
+}
+
+#containerPref{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+
+}
+
+#btnSavePref.btn{
+    background-color:rgb(243, 243, 243);
+    padding: 5px 5px;
+    border: solid;
+    border-width:thin;
+    border-color: rgb(221, 221, 221);
+    margin-left: 35%;
+}
+
+#btnSavePref.btn:hover{
+  background-color:rgb(249, 249, 249);
+}
+
+.btn.btn-danger{
+  margin-left: 35%;
+}
+
+#saveChanges.btn{
+    background-color:rgb(243, 243, 243);
+    padding: 5px 5px;
+    border: solid;
+    border-width:thin;
+    border-color: rgb(221, 221, 221);
+  margin-left: 35%;
+}
+
+#saveChanges.btn:hover{
+  background-color:rgb(249, 249, 249);
+}
+
+
+@media screen and (max-width:480px){
+  #settingsTabs{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-gap: 0px;
+    justify-content: center;
+  }
+  #settingUsernameInput{
+    width: 50%;
+    margin-top: 0px;
+  }
+  #settingEmailInput{
+    margin-top: 0px;
+    width: 85%;
+  }
+  #changeButton{
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+}
+
+@media screen and (max-width:350px){
+  #pushNotifLabel{
+    margin-left: 10px;
+  }
+  #emailNotifLabel{
+    margin-left: 10px;
+  }
+
+}
+@media screen and (max-width:280px){
+  #pushFilterLabel{
+    grid-row: 2;
+    grid-column: 1/2;
+    margin: auto;
+  }
+}

@@ -1,0 +1,72 @@
+
+.dateAlertOnDisplayedGreen{
+    grid-area: dateAlert;
+    border-radius: 50%;
+    width:17px; 
+    height:17px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: green;
+}
+
+.dateAlertOnDisplayedRed{
+    grid-area: dateAlert;
+    border-radius: 50%;
+    width:17px; 
+    height:17px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+}
+
+.warningAlertOnDisplayed{
+    background:url("./warning.png") no-repeat;
+    grid-area: dateAlert; 
+    margin-top: 35px;
+}
+
+.warningAlert{
+    background:url("./warning.png") no-repeat;
+    grid-area: editTaskButton;
+    margin-top:10px;
+}
+
+.dateAlertOnDisplayedOrange{
+    grid-area: dateAlert;
+    border-radius: 50%;
+    width:17px; 
+    height:17px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: orange;
+}
+
+.dateAlertGreen{
+    grid-area: editTaskButton;
+    border-radius: 50%;
+    width:17px; 
+    height:17px;
+    margin-top:10px;
+    background-color: green;
+}
+
+.dateAlertOrange{
+    grid-area: editTaskButton;
+    border-radius: 50%;
+    width:17px; 
+    height:17px;
+    margin-top:10px;
+    background-color: orange;
+}
+
+.dateAlertRed{
+    grid-area: editTaskButton;
+    border-radius: 50%;
+    width:17px; 
+    height:17px;
+    margin-top:10px;
+    background-color: red;
+}

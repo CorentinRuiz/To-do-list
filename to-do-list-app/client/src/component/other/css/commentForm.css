@@ -1,0 +1,19 @@
+#sendComment{
+    height: 30px;
+    width: 160px;
+    text-align: center;
+    padding-top: 3px;
+    background-color: rgb(121, 117, 117);
+    border:black;
+}
+
+#formComment{
+    padding-top: 16px;
+}
+@media screen and (max-width:500px){
+
+    #sendComment{
+        margin-top: 20px;
+        
+    }
+}

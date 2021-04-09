@@ -1,0 +1,72 @@
+#globalDivForCreateTask {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+#labelTaskName {
+    grid-column: 1;
+    grid-row: 1;
+}
+#taskName {
+    grid-column: 2;
+    grid-row: 1;
+}
+#labelStartingDate {
+    grid-column: 1;
+    grid-row: 2;
+}
+#startingDate {
+    grid-column: 2;
+    grid-row: 2;
+}
+#labelDueDate {
+    grid-column: 1;
+    grid-row: 3;
+}
+#dueDate {
+    grid-column: 2;
+    grid-row: 3;
+}
+#labelAddTaskDescription {
+    grid-column: 1;
+    grid-row: 4;
+}
+#addTaskDescription {
+    grid-column: 2;
+    grid-row: 4;
+}
+.btn-primaryPlus{
+    background-color: rgb(121, 117, 117);
+    border:  rgb(92, 89, 89);
+    width:30px;
+    height:30px;
+    padding:1px 6px;
+}
+.btn-primaryPlus:hover{
+    background-color: rgb(155, 150, 150);
+}
+.addTask{
+    color: white;
+    margin:0;
+}
+
+@media screen and (max-width:500px){
+    #globalDivForCreateTask{
+        display: flex;
+        flex-direction: column;
+    }
+    #labelTaskName{
+        margin-bottom:0px;
+    }
+    #labelStartingDate{
+        margin-bottom: 0px;
+    }
+    #labelDueDate{
+        margin-bottom:0px;
+    }
+    #labelAddTaskDescription{
+        margin-bottom:0px;
+    }
+
+}
+

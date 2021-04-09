@@ -1,0 +1,95 @@
+#containerArchTask {
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+#modalInDarkMode {
+    color: grey;
+}
+#modalInLightMode {
+    color: white;
+}
+#editCatButton{
+    background-color:rgb(243, 243, 243);
+    width:30px;
+    height:30px;
+    padding: 0px 5px;
+    border: solid;
+    border-width:thin;
+    border-color: rgb(221, 221, 221);
+}
+
+#editCatButton:hover{
+    background-color:rgb(249, 249, 249);
+}
+.editCat{
+    color: rgb(98, 97, 97);
+}
+.editCat:hover{
+    color: rgb(121, 118, 118);
+}
+
+#globalDivForCreateCategory {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding-bottom: 10px;
+}
+#labelNameCat {
+    grid-column: 1;
+    grid-row: 1;
+}
+#nameCat {
+    grid-column: 2;
+    grid-row: 1;
+}
+#labelChooseColor {
+    grid-column: 1;
+    grid-row: 2;
+}
+#chooseColor {
+    grid-column: 2;
+    grid-row: 2;
+}
+#modalTitle{
+    width: 100%;
+    text-align: center;
+}
+
+#a{
+    
+}
+
+#submitEditCat {
+    margin-left: 45%;
+    background-color:rgb(243, 243, 243);
+    font-weight: 500;
+    color: black;
+    border: solid;
+    border-width:thin;
+    border-color: rgb(221, 221, 221);
+    font-family: "Poppins", sans-serif;
+    
+}
+#submitEditCat:hover{
+    background-color:rgb(249, 249, 249);
+}
+#submitEditCat:active{
+    background-color: black;
+}
+
+#alertNoArchTasks{
+    font-style: italic;
+}
+#marge{
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 500px){
+    #globalDivForCreateCategory{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

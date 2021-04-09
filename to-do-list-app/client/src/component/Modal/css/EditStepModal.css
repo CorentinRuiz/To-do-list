@@ -1,0 +1,68 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+#ModalTitle{
+    font-family: "Poppins", sans-serif;
+}
+
+#globalDivForEditStepModal {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+#labelStepName {
+    grid-column: 1;
+    grid-row: 1;
+}
+#stepName {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#submitStepEdit{
+    background-color:rgb(243, 243, 243);
+    font-weight: 500;
+    color: black;
+    border: solid;
+    border-width:thin;
+    border-color: rgb(221, 221, 221);
+    font-family: "Poppins", sans-serif;
+}
+
+#submitStepEdit:hover{
+    background-color:rgb(249, 249, 249);
+}
+
+#submitStepEdit:active{
+    background-color: black;
+}
+
+#edit_img{
+    height: 65%;
+    width: 100%;
+}
+#editStepButton {
+    width:25px;
+    height:25px;
+    padding: 0px 0px 1px;
+    border-radius: 50%;
+    margin-bottom: 3px;
+}
+
+#editStepButton:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 500px){
+    #globalDivForEditStepModal{
+        display: flex;
+        flex-direction: column;
+    }   
+    
+}
+@media screen and (max-width:300px){
+    #ModalTitle{
+        font-size:inherit;
+    }
+}

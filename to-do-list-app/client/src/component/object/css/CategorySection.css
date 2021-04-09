@@ -1,0 +1,119 @@
+.containerCat{
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.containerCat > * {
+    margin: auto;
+}
+.catDis{
+    border-radius: 3px;
+    border:solid;
+    border-width: thin;
+    border-color: rgb(173, 171, 171);
+    margin-top: 20px;
+    margin-left: 70px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-primaryDelete{
+    background-color:rgb(243, 243, 243);
+    width:30px;
+    height:30px;
+    padding: 0px 5px;
+    border: solid;
+    border-width:thin;
+    border-color: rgb(221, 221, 221);
+}
+.btn-primaryDelete:hover{
+    background-color:rgb(249, 249, 249);
+}
+.deleteButton {
+    color: rgb(98, 97, 97);
+}
+
+.deleteButton:hover{
+    color: rgb(121, 118, 118);
+}
+.titleCat{
+    font-family: "Poppins", sans-serif;
+    padding-top: 10px;
+    font-size: 120%;
+}
+@media screen and (max-width:750px){
+    .containerCat{
+        display: flex;
+        flex-direction: column;
+    }
+}
+#globalDivForCategory {
+    margin-right: 3px;
+    margin-left: 3px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "title title title" /* le titre prend tout l'espace */
+                         "allTask allTask allTask"/* 2 colonnes pour les tasks, et une colonne vide où je vais mettre l'edit de la tache */
+                         "taskButtonAndText taskButtonAndText taskButtonAndText"/* delete, puis 2 collonnes vides pour l'ajout */
+                         ". . ."
+                         ". delete editCategoryButton"; /* delete la categorie, puis vide et edit la catégorie. */
+}
+#divTitleCat {
+    text-align: center;
+    height: 50px;
+    grid-area: title;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    
+}
+#addTaskButtonAndText{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: taskButtonAndText;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+#deleteCategoryButton{
+    margin-bottom: 6px;
+    margin-left: 100px;
+    grid-area: delete;
+}
+#editCategoryButton {
+    grid-area: editCategoryButton;
+    margin-right: 6px;
+}
+.eachTask {
+    grid-area: task;
+    margin-left: 6px;
+    color: white;
+}
+#allTask {
+    grid-area: allTask;
+}
+
+#editCatButton {
+    background-color: rgb(121, 117, 117);
+    width:30px;
+    height:30px;
+    padding:1px 6px;
+}
+
+
+#editCatButton:hover {
+    background-color: rgb(155, 150, 150);
+}
+
+.editCat{
+    color:white;
+}
+
+

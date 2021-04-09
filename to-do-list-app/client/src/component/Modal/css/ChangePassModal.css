@@ -1,0 +1,92 @@
+#changePass{
+    border:none;
+    text-decoration: underline;
+    font-size: 90%;
+    width: 100%;
+  }
+  #changePass:hover{
+   cursor: pointer ;
+   color:rgb(124, 121, 121);
+  }
+
+#passChangeContainer{
+    display: grid;
+    grid-row-gap: 10px;
+    margin-bottom: 20px;
+  }
+
+#actualPassLabel{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#settingActualPassword{
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+}
+
+#newPassLabel{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#settingNewPassword{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#confirmPassLabel{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#settingConfirmNewPassword{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.inputPad{
+    margin-bottom: 20px;
+}
+
+
+#btnSaveNewPass.btn{ 
+    background-color:rgb(243, 243, 243);
+    padding: 5px 5px;
+    border: solid;
+    border-width:thin;
+    border-color: rgb(221, 221, 221);
+    margin-left: 35%;
+}
+
+#btnSaveNewPass.btn:hover{
+    background-color:rgb(249, 249, 249);
+}
+@media screen and (max-width:350px){
+    #settingActualPassword{
+        width: 90%;
+    }
+    #settingNewPassword{
+        width: 90%;
+    }
+    #settingConfirmNewPassword{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:320px){
+    #passChangeContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    #actualPassLabel{
+        margin-bottom: 0px;
+    }
+    #newPassLabel{
+        margin-bottom: 0px;
+    }
+    #confirmPassLabel{
+        margin-bottom: 0px;
+    }
+}

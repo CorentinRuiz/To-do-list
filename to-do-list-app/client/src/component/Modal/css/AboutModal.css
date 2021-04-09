@@ -1,0 +1,44 @@
+#modalHeader{
+    background-color: #11428b;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+#modalTitle{
+    font-size: 35px;
+    text-align: center;
+    color : white;
+}
+#btnAbout.btn.btn.btn-primaryInformation{
+    background-color: none;
+}
+#btnAbout.btn.btn.btn-primaryInformation:hover{
+    background-color: #11428b;
+    border-radius: 20%;
+}
+.information{
+    color: white;
+    margin: 0; 
+}
+ul li a { 
+    color: black; 
+} 
+ul li a:hover { 
+    color: grey;
+   } 
+#title{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-size: 1.2em;
+    letter-spacing: 0.01em;
+    font-family: "Poppins", sans-serif;
+}
+body div{
+    text-align: inherit;
+    font-family: "Poppins", sans-serif;
+}
+.video{
+display: flex;
+justify-content: center;
+margin-bottom:50px;
+}

@@ -1,0 +1,11 @@
+#btnDeleteAccount.btn.btn-danger{
+    margin-right: 10px; 
+}
+
+#btnValidateDeleteAccount.btn.btn-success{
+    background-color: green;
+}
+
+#btnValidateDeleteAccount.btn.btn-success:hover{
+    background-color: rgb(45, 156, 45);
+}
